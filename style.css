@@ -1,0 +1,185 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
+} */
+
+/* styles.css - Timeless Power of Art PDF Layout Recreation */
+
+/* Base Styles - Clean, professional PDF-like appearance */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #f8f8f8;
+    font-size: 16px;
+}
+
+/* Main Title - Large, bold, centered */
+h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+    color: #2c1810;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+/* Subtitle/Intro paragraphs */
+body > p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Section Headers (H1) - Prominent section titles */
+h1:not(:first-child) {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #2c1810;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+    border-top: 2px solid #e0d8c9;
+}
+
+/* Subsection Headers (H2) */
+h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #3a2a1a;
+    margin: 35px 0 20px 0;
+    letter-spacing: -0.01em;
+}
+
+/* Paragraphs - Generous spacing, justified */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Blockquotes and emphasized text */
+blockquote {
+    font-style: italic;
+    margin: 25px 0;
+    padding-left: 25px;
+    border-left: 4px solid #d4c4a8;
+    color: #2a1f15;
+}
+
+/* Lists - Clean, indented */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Tables - PDF-style professional tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #d1c5a6;
+}
+
+th {
+    background: #f5f0e6;
+    font-weight: 600;
+    color: #2c1810;
+}
+
+tr:last-child th, tr:last-child td {
+    border-bottom: 2px solid #b8a68a;
+}
+
+/* Links - Subtle, professional */
+a {
+    color: #4a5d23;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Print styles - Perfect PDF output */
+@media print {
+    body {
+        background: white;
+        padding: 20px;
+        font-size: 12pt;
+    }
+    
+    h1:not(:first-child) {
+        border-top: 1px solid #ccc;
+        page-break-after: avoid;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+/* Updated styles.css - Added more space after first image */
+
+body > img:first-of-type,
+img[src*="first"],
+img:first-child {
+    display: block;
+    margin: 0 auto 60px auto !important;
+    max-width: 100%;
+    height: auto;
+}
+
+body > img,
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rest of your existing CSS remains the same... */
